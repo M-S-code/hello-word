@@ -1,2 +1,7 @@
-# hello-word
-description for code
+#esc
+system-view
+vlan 100
+q
+vlan 200
+save
+q
