@@ -1,0 +1,25 @@
+[R1]:
+sys
+router id 1.1.1.1
+ospf 1
+area 0
+network 10.1.12.0 0.0.0.255
+network 1.1.1.1 0.0.0.0
+
+
+R2:
+sys
+router id 2.2.2.2
+ospf 1
+area 0
+network 10.1.12.0 0.0.0.255
+network 10.1.23.0 0.0.0.255
+network 2.2.2.2 0.0.0.0
+
+R3:
+sys
+router id 3.3.3.3
+ospf 1
+area 0
+network 10.1.23.0 0.0.0.255
+network 3.3.3.3 0.0.0.0
