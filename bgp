@@ -1,0 +1,23 @@
+R1:
+sys
+bgp 123
+ipv4-family vpn-instance VPN1
+peer 10.1.14.4 as-number 14
+
+R3:
+sys
+bgp 123
+ipv4-family vpn-instance VPN2
+peer 10.1.35.5 as-number 35
+
+R4:
+sys
+bgp 14
+peer 10.1.14.1 as-number 123
+network 192.168.1.0 24
+
+R5:
+sys
+bgp 35
+peer 10.1.35.1 as-number 123
+network 192.168.2.0 24
